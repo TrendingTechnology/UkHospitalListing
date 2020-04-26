@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdkVersion config.compileSdk
+    defaultConfig {
+        applicationId "uk.cookpad.ukhospital"
+        minSdkVersion config.minSdk
+        targetSdkVersion config.compileSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation googleLibs.supportV4
+    implementation googleLibs.design
+    implementation googleLibs.recyclerView
+    implementation googleLibs.appCompat
+    implementation googleLibs.cardView
+    implementation googleLibs.constraintLayout
+    implementation googleLibs.lifecycleRuntime
+    implementation googleLibs.roomRuntime
+    implementation googleLibs.roomRxJava
+    implementation googleLibs.paging
+    implementation googleLibs.pagingExt
+
+    implementation libs.kotlin
+    implementation libs.koinCore
+    implementation libs.koinAndroid
+    implementation libs.koinScope
+    implementation libs.koinViewModel
+    kapt googleLibs.roomCompiler
+
+    implementation libs.moshi
+    implementation libs.moshiAdapters
+    implementation libs.okHttpLogInterceptor
+    implementation libs.retrofit
+    implementation libs.retrofitMoshi
+    implementation libs.retrofitRxAdapter
+    implementation libs.rxjava
+    implementation libs.rxandroid
+
+    setup_common_test_dependencies(this)
+}

@@ -1,0 +1,166 @@
+ext.config = [
+        buildTools: "28.0.3",
+        minSdk    : 21,
+        compileSdk: 29
+]
+
+ext.versions = [
+        koin             : '2.1.3',
+        constraintLayout : '1.1.3',
+        lifecycle        : '2.2.0-rc03',
+        rxBinding        : '3.1.0',
+        androidJoda      : '2.9.9.4',
+        okhttp           : '3.14.4',
+        stetho           : '1.5.0',
+        rxandroid        : '2.1.1',
+        okio             : '1.17.5',
+        moshi            : '1.9.2',
+        retrofit         : '2.7.0',
+        rxjava           : '2.2.16',
+        room             : '2.2.2',
+        rxPreferences    : '2.0.0',
+        glide            : "4.11.0",
+        workManager      : '2.2.0',
+        cameraX          : '1.0.0-beta01',
+        cameraView       : '1.0.0-alpha08',
+        mpAndroidChart   : 'v3.1.0',
+        //dev
+        leakCanaryVersion: '2.2',
+        debugdrawer      : '0.8.0',
+        lint             : '26.6.1',
+        chuck            : '1.1.0',
+
+        //test
+        androidTest      : '1.2.0',
+        truth            : '0.40',
+        espresso         : '3.2.0',
+        joda             : '2.9.9',
+        kaspresso        :  '1.1.0'
+]
+
+ext.googleLibs = [
+        collection           : "androidx.collection:collection:1.0.0",
+        appCompat            : "androidx.appcompat:appcompat:1.1.0",
+        design               : "com.google.android.material:material:1.1.0-beta02",
+        recyclerView         : "androidx.recyclerview:recyclerview:1.1.0",
+        cardView             : "androidx.cardview:cardview:1.0.0",
+        supportV4            : "androidx.legacy:legacy-support-v4:1.0.0",
+        supportExif          : "androidx.exifinterface:exifinterface:1.1.0",
+        constraintLayout     : "androidx.constraintlayout:constraintlayout:$versions.constraintLayout",
+        playServicesAuth     : "com.google.android.gms:play-services-auth:17.0.0",
+        playServicesAnalytics: "com.google.android.gms:play-services-analytics:17.0.0",
+        firebasePerformance  : "com.google.firebase:firebase-perf:19.0.3",
+        firebaseAnalytics    : "com.google.firebase:firebase-analytics:17.2.1",
+        firebaseMessaging    : "com.google.firebase:firebase-messaging:20.1.0",
+        lifecycleRuntime     : "androidx.lifecycle:lifecycle-extensions:$versions.lifecycle",
+        lifecycleCompiler    : "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle",
+        paging               : "androidx.paging:paging-runtime:2.0.0-rc01",
+        pagingExt            : "androidx.paging:paging-runtime-ktx:2.1.0-rc01",
+        roomRuntime          : "androidx.room:room-runtime:$versions.room",
+        roomRxJava           : "androidx.room:room-rxjava2:$versions.room",
+        roomCompiler         : "androidx.room:room-compiler:$versions.room",
+        ktxCore              : "androidx.core:core-ktx:1.1.0",
+        ktxFragment          : "androidx.fragment:fragment-ktx:1.1.0",
+        payment              : "com.android.billingclient:billing:1.2.2",
+        emojiCompat          : "androidx.emoji:emoji:1.0.0",
+        workManagerKtx       : "androidx.work:work-runtime-ktx:$versions.workManager",
+        workManagerRx        : "androidx.work:work-rxjava2:$versions.workManager",
+        playCore             : "com.google.android.play:core:1.6.4",
+        guava                : "com.google.guava:guava:28.0-android",
+        viewpager2           : "androidx.viewpager2:viewpager2:1.0.0",
+        reactivestreams      : "android.arch.lifecycle:reactivestreams:1.1.1",
+        navigation           : "androidx.navigation:navigation-fragment-ktx:$versions.navigation",
+        navigationUi         : "androidx.navigation:navigation-ui-ktx:$versions.navigation",
+        cameraCore           : "androidx.camera:camera-core:$versions.cameraX",
+        cameraX              : "androidx.camera:camera-camera2:$versions.cameraX",
+        cameraLifecycle      : "androidx.camera:camera-lifecycle:$versions.cameraX",
+        cameraView           : "androidx.camera:camera-view:$versions.cameraView",
+        flexbox              : "com.google.android:flexbox:2.0.1"
+]
+
+ext.libs = [
+        kotlin                       : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+        koinCore                     : "org.koin:koin-core:$versions.koin",
+        koinAndroid                  : "org.koin:koin-android:$versions.koin",
+        koinScope                    : "org.koin:koin-androidx-scope:$versions.koin",
+        koinViewModel                : "org.koin:koin-androidx-viewmodel:$versions.koin",
+        rxBinding                    : "com.jakewharton.rxbinding3:rxbinding-core:$versions.rxBinding",
+        rxBindingSupportV4           : "com.jakewharton.rxbinding3:rxbinding-material:$versions.rxBinding",
+        rxBindingSupportV7           : "com.jakewharton.rxbinding3:rxbinding-appcompat:$versions.rxBinding",
+        rxBindingRecyclerView        : "com.jakewharton.rxbinding3:rxbinding-recyclerview:$versions.rxBinding",
+        rxBindingSwipeRefreshLayout  : "com.jakewharton.rxbinding3:rxbinding-swiperefreshlayout:$versions.rxBinding",
+        rxBindingViewPager           : "com.jakewharton.rxbinding3:rxbinding-viewpager:$versions.rxBinding",
+        rxPreferences                : "com.f2prateek.rx.preferences2:rx-preferences:$versions.rxPreferences",
+        rxjava2Debug                 : "com.akaita.java:rxjava2-debug:1.4.0",
+        facebookLogin                : "com.facebook.android:facebook-login:5.5.1",
+        permissionsdispatcherRuntime : "org.permissionsdispatcher:permissionsdispatcher:4.5.0",
+        permissionsdispatcherCompiler: "org.permissionsdispatcher:permissionsdispatcher-processor:4.5.0",
+        androidJoda                  : "net.danlew:android.joda:$versions.androidJoda",
+        okhttp                       : "com.squareup.okhttp3:okhttp:$versions.okhttp",
+        okhttpUrlConnection          : "com.squareup.okhttp3:okhttp-urlconnection:$versions.okhttp",
+        rxjava                       : "io.reactivex.rxjava2:rxjava:$versions.rxjava",
+        rxandroid                    : "io.reactivex.rxjava2:rxandroid:$versions.rxandroid",
+        moshi                        : "com.squareup.moshi:moshi:$versions.moshi",
+        moshiCodegen                 : "com.squareup.moshi:moshi-kotlin-codegen:$versions.moshi",
+        moshiAdapters                : "com.squareup.moshi:moshi-adapters:$versions.moshi",
+        retrofit                     : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+        retrofitMoshi                : "com.squareup.retrofit2:converter-moshi:$versions.retrofit",
+        retrofitRxAdapter            : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+        okHttpLogInterceptor         : "com.squareup.okhttp3:logging-interceptor:$versions.okhttp",
+        network_sampling             : "com.facebook.network.connectionclass:connectionclass:1.0.1",
+        viewPagerIndicator           : "com.github.cookpad:PageIndicatorView:master-SNAPSHOT",
+        glide                        : "com.github.bumptech.glide:glide:$versions.glide",
+        glideCompiler                : "com.github.bumptech.glide:compiler:$versions.glide",
+        okio                         : "com.squareup.okio:okio:$versions.okio",
+        mpAndroidChart               : "com.github.PhilJay:MPAndroidChart:$versions.mpAndroidChart",
+]
+
+ext.testLibs = [
+        runner                : "androidx.test:runner:$versions.androidTest",
+        rules                 : "androidx.test:rules:$versions.androidTest",
+        orchestrator          : "androidx.test:orchestrator:$versions.androidTest",
+        espressoIdlingResource: "androidx.test.espresso:espresso-idling-resource:$versions.espresso",
+        espressoIntents       : "androidx.test.espresso:espresso-intents:$versions.espresso",
+        archTesting           : "androidx.arch.core:core-testing:2.0.0",
+        roomTesting           : "androidx.room:room-testing:$versions.room",
+        junit                 : "junit:junit:4.12",
+        truth                 : "com.google.truth:truth:$versions.truth",
+        mockitoKotlin         : "com.nhaarman:mockito-kotlin:1.6.0",
+        koinTest              : "org.koin:koin-test:$versions.koin",
+        kotlinStdLib          : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+        dexmakerMockito       : "com.linkedin.dexmaker:dexmaker-mockito:2.19.0",
+        mockwebserver         : "com.squareup.okhttp3:mockwebserver:$versions.okhttp",
+        kfixture              : "com.flextrade.jfixture:kfixture:0.2.0",
+        kaspresso             : "com.kaspersky.android-components:kaspresso:$versions.kaspresso",
+]
+ext.setup_common_test_dependencies = this.&setup_common_test_dependencies
+def setup_common_test_dependencies(targetProject) {
+    targetProject.dependencies.testImplementation(testLibs.mockitoKotlin)
+    targetProject.dependencies.testImplementation(testLibs.truth)
+    targetProject.dependencies.testImplementation(testLibs.junit)
+    targetProject.dependencies.testImplementation(testLibs.archTesting)
+    targetProject.dependencies.testImplementation(testLibs.kfixture)
+
+    targetProject.dependencies.testImplementation(testLibs.koinTest) {
+        exclude group: 'org.mockito'
+    }
+
+    targetProject.dependencies.androidTestImplementation(testLibs.koinTest) {
+        exclude group: 'org.mockito'
+    }
+
+    targetProject.dependencies.androidTestImplementation(testLibs.mockwebserver)
+    targetProject.dependencies.androidTestImplementation(testLibs.espressoIdlingResource)
+    targetProject.dependencies.androidTestImplementation(testLibs.rules)
+    targetProject.dependencies.androidTestImplementation(testLibs.runner)
+    targetProject.dependencies.androidTestImplementation(testLibs.espressoIntents)
+    targetProject.dependencies.androidTestImplementation(testLibs.truth)
+    targetProject.dependencies.androidTestImplementation(testLibs.kotlinStdLib)
+    targetProject.dependencies.androidTestImplementation(testLibs.kfixture)
+    targetProject.dependencies.androidTestImplementation(testLibs.dexmakerMockito) {
+        exclude group: "net.bytebuddy"
+    }
+    targetProject.dependencies.androidTestImplementation(testLibs.mockitoKotlin) {
+        exclude group: "net.bytebuddy"
+    }
+}
