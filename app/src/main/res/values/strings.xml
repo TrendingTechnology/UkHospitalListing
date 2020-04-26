@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UK Hospital</string>
+    <string name="message_data_success">Data Refreshed: Records %1d</string>
+    <string name="message_data_error">Error fetching data, Please try again!</string>
+    <string name="message_data_error_action">Try again</string>
+    <string name="only_nhs_filter">Only NHS</string>
+    <string name="action_filter">Filter</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="filters">Filters</string>
+</resources>
