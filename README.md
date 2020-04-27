@@ -1,5 +1,7 @@
 ## Project showcase to show the Listing of Uk Hospitals
 
+[APK to downlaod](https://github.com/dp-singh/UkHospitalListing/blob/master/apk/app-debug.apk)
+
 ### UI Screenshots
 
 | Hospital Listing Screen | Hospital Details Screen |
